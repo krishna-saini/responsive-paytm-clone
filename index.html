@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paytm</title>
+    <!-- linking talwind css  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- config tailwind  -->
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: "540px",
+            md: "760px",
+            lg: "970px",
+            xl: "1280px",
+            xxl: "1440px",
+          },
+          fontFamily: {
+            body: ["Inter", "sans-serif"],
+          },
+
+          extend: {
+            colors: {
+              lightBlue: "#00ACED",
+              darkBlue: "#0F4A8A",
+              graySupLight: "#F5f7fA",
+              blueSupLight: "#F0FBFF",
+              lightBlueForCards: "#66D6FF",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-body">
+    <header>
+      <!-- navbar section  -->
+      <nav class="relative container mx-auto px-12 py-4 shadow-md">
+        <!-- flex container  -->
+        <div class="flex items-center justify-between">
+          <!-- hamburger button for mobile nav -->
+          <button
+            id="menu-btn"
+            class="flex hamburger foucs:outline-none md:hidden"
+          >
+            <img
+              src="./images/icon-hamburger.svg"
+              alt=""
+              class="block hamburgerIcon"
+            />
+            <img
+              src="./images/icon-close.svg"
+              alt=""
+              class="hidden closeIcon"
+            />
+          </button>
+          <!-- logo  -->
+          <div>
+            <img
+              src="./imgs/logo/logo.png"
+              alt="paytm logo img"
+              class="h-12 md:h-16"
+            />
+          </div>
+          <!-- menu items  -->
+          <div class="hidden md:flex space-x-8 font-[600]">
+            <a href="#" class="hover:text-graySupLight">Paytm for Consumers</a>
+            <a href="#" class="hover:text-graySupLight">Paytm for Business</a>
+            <a href="#" class="hover:text-graySupLight">Company</a>
+            <a href="#" class="hover:text-graySupLight">Investor Relations</a>
+            <a href="#" class="hover:text-graySupLight">Career</a>
+          </div>
+          <!-- button  -->
+          <a
+            href="#"
+            class="flex items-center gap-x-2 justify-between bg-lightBlue rounded-full pl-6 pr-1 py-1 group hover:bg-darkBlue"
+          >
+            <span class="text-white font-bold">Sign In</span>
+            <svg
+              width="34"
+              height="34"
+              fill="none"
+              viewBox="0 0 34 34"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="17"
+                cy="17"
+                r="17"
+                fill="#002970"
+                class="group-hover:fill-lightBlue"
+              />
+              <circle cx="17" cy="14.7331" r="7.93333" fill="white" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.07898 28.048C6.58399 23.4894 11.4312 20.3999 16.9999 20.3999C22.5687 20.3999 27.4159 23.4894 29.9209 28.048C26.8029 31.691 22.1711 33.9999 16.9999 33.9999C11.8288 33.9999 7.19693 31.691 4.07898 28.048Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- kyc info section -->
+    <div>
+        <p> No wallet KYC Required. <span>😊</span> <span>to pay using UPI on Paytm</span> <a href="#">Learn More</a></p>
+    </div>
+    
+  </body>
+</html>
