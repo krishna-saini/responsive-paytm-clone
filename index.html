@@ -34,28 +34,32 @@
         },
       };
     </script>
+    <!-- link JS file  -->
+    <script src="./js/script.js"></script>
+    <!-- link ion-icons  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body class="font-body">
-    <header>
+    <header class="shadow-md">
       <!-- navbar section  -->
-      <nav class="relative container mx-auto px-12 py-4 shadow-md">
+      <nav class="relative container mx-auto px-12 py-6">
         <!-- flex container  -->
         <div class="flex items-center justify-between">
           <!-- hamburger button for mobile nav -->
-          <button
-            id="menu-btn"
-            class="flex hamburger foucs:outline-none md:hidden"
-          >
+          <button id="menu-btn" class="flex foucs:outline-none lg:hidden">
             <img
-              src="./images/icon-hamburger.svg"
+              src="./imgs/icon-hamburger.svg"
               alt=""
               class="block hamburgerIcon"
             />
-            <img
-              src="./images/icon-close.svg"
-              alt=""
-              class="hidden closeIcon"
-            />
+            <img src="./imgs/icon-close.svg" alt="" class="hidden closeIcon" />
           </button>
           <!-- logo  -->
           <div>
@@ -66,7 +70,9 @@
             />
           </div>
           <!-- menu items  -->
-          <div class="hidden md:flex space-x-8 font-[600]">
+          <div
+            class="hidden flex items-center justify-between lg:flex space-x-8 font-[600] px-2"
+          >
             <a href="#" class="hover:text-graySupLight">Paytm for Consumers</a>
             <a href="#" class="hover:text-graySupLight">Paytm for Business</a>
             <a href="#" class="hover:text-graySupLight">Company</a>
@@ -78,7 +84,7 @@
             href="#"
             class="flex items-center gap-x-2 justify-between bg-lightBlue rounded-full pl-6 pr-1 py-1 group hover:bg-darkBlue"
           >
-            <span class="text-white font-[600]">Sign In</span>
+            <span class="text-white font-[600] text-sm">Log In</span>
             <svg
               width="34"
               height="34"
@@ -103,12 +109,103 @@
             </svg>
           </a>
         </div>
+        <!-- mobile menu  -->
+        <div
+          id="menu"
+          class="absolute left-6 right-6 flex-col items-center gap-y-6 bg-white h-screen py-8 mt-10 font-bold drop-shadow-md hidden"
+        >
+          <a href="#" class="hover:text-graySupLight">Company</a>
+          <a href="#" class="hover:text-graySupLight">Investor Relations</a>
+          <a href="#" class="hover:text-graySupLight">Career</a>
+        </div>
       </nav>
     </header>
     <!-- kyc info section -->
-    <div class="text-center bg-graySupLight py-2 flex items:center justify-center ">
-        <span class="font-[600]"> No wallet KYC Required.</span> <span class="self-center">😊</span> <span>to pay using UPI on Paytm.</span> <a href="#" class="font-[600]">Learn More</a>
+    <div
+      class="text-center bg-graySupLight py-2 flex items:center justify-center"
+    >
+      <span class="font-[600]"> No wallet KYC Required.</span>
+      <span class="self-center">😊</span>
+      <span>to pay using UPI on Paytm.</span>
+      <a href="#" class="font-[600]">Learn More</a>
     </div>
-    
+    <!-- hero section  -->
+    <section id="hero">
+      <!-- flex container  -->
+      <div
+        class="container mx-auto my-16 px-12 flex gap-y-8 flex-col-reverse items-center md:flex-row md:space-y-0 md:gap-x-20 md:pb-16"
+      >
+        <!-- hero left logo & text  -->
+        <div
+          class="flex flex-col space-y-8 items-center md:w-1/2 md:items-start"
+        >
+          <!-- logo -->
+          <img
+            src="./imgs/logo/download.png"
+            alt="paytm logo"
+            class="w-[80px] drop-shadow-md mb-8"
+          />
+
+          <!-- heading  -->
+          <h1 class="text-4xl font-[700] text-center md:text-5xl md:text-left">
+            India's Most-loved Payments App
+          </h1>
+          <!-- para  -->
+          <p class="text-center md:text-left">
+            Recharge & pay bills, book flights & movie tickets, open a savings
+            account, invest in stocks & mutual funds, and do a lot more.
+          </p>
+          <!-- button  -->
+          <button
+            class="flex gap-x-3 items-center justify-center bg-black text-white px-6 py-3 rounded-full group hover:bg-white border-[1px] hover:border-black transition duration-200 md:justify-start"
+          >
+            <span class="group-hover:text-black">Download Paytm App</span>
+            <ion-icon
+              name="logo-apple"
+              class="group-hover:text-black"
+            ></ion-icon
+            ><ion-icon
+              name="logo-google-playstore"
+              class="group-hover:text-black"
+            ></ion-icon>
+          </button>
+        </div>
+
+        <!-- hero right img  -->
+        <div class="lg:w-1/2">
+          <img
+            src="./imgs/BannerImage.webp"
+            alt=" "
+            class="w-[528px] md:absolute right-0 top-[240px] md:w-[380px] lg:w-[488px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- recharge section  -->
+    <section id="recharge" class="bg-lightBlue">
+      <!-- container to heading and services block  -->
+      <div class="container m-auto max-w-6xl">
+        <div class="py-16">
+          <!-- heading  -->
+          <h2 class="text-4xl text-white font-bold md:text-left">
+            Recharge & Pay Bills on Paytm.
+          </h2>
+          <!-- recharge services container   -->
+          <div class="flex mt-6">
+            <!-- 01  -->
+            <div>
+              <img src="" alt="" />
+              <div>
+                <div>
+                  Movie
+                  <div>Tickets</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
