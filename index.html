@@ -69,18 +69,18 @@
       </a>
 
       <!-- menu items -->
-      <nav class="hidden xl:flex xl:items-center xl:gap-x-12">
-        <a href="#" class="hover:text-graySupLight">Paytm for Consumers</a>
-        <a href="#" class="hover:text-graySupLight">Paytm for Business</a>
-        <a href="#" class="hover:text-graySupLight">Company</a>
-        <a href="#" class="hover:text-graySupLight">Investor Relations</a>
-        <a href="#" class="hover:text-graySupLight">Career</a> 
+      <nav class="hidden xl:flex xl:items-center xl:gap-x-12 font-bold">
+        <a href="#" class="p-3 hover:bg-gray-100">Paytm for Consumers</a>
+        <a href="#" class="p-3 hover:bg-gray-100">Paytm for Business</a>
+        <a href="#" class="p-3 hover:bg-gray-100">Company</a>
+        <a href="#" class="p-3 hover:bg-gray-100">Investor Relations</a>
+        <a href="#" class="p-3 hover:bg-gray-100">Career</a> 
       </nav>
       <!-- button  -->
       <a
         href="#"
-        class="flex items-center gap-x-1  justify-between bg-lightBlue rounded-full pl-6 pr-1 py-1 group hover:bg-darkBlue">
-        <span class="text-white text-sm">Log In</span>
+        class="flex items-center gap-x-1  justify-between bg-lightBlue rounded-full md:pl-6 md:pr-1 md:py-1 group hover:bg-darkBlue">
+        <span class="hidden md:block text-white text-sm">Log In</span>
         <svg
             width="34"
             height="34"
@@ -115,14 +115,14 @@
       <a href="#" class="font-[600]">Learn More</a>
     </div>
     <!-- hero section  -->
-    <section id="hero" class="py-24">
+    <section id="hero" class="py-12">
       <!-- flex container  -->
       <div
-        class="container max-w-screen-xl mx-auto my-16 px-8 flex gap-y-8 flex-col-reverse items-center lg:flex-row lg:space-y-0  "
+        class="container max-w-screen-xxl mx-auto my-16 px-8 flex gap-y-12 flex-col-reverse items-center lg:flex-row lg:space-y-0  "
       >
         <!-- hero left logo & text  -->
         <div
-          class="flex flex-col space-y-8 items-center md:w-1/2 lg:items-start"
+          class="flex flex-col space-y-8 items-center px-8 md:w-1/2 lg:items-start"
         >
           <!-- logo -->
           <img
@@ -132,11 +132,11 @@
           />
 
           <!-- heading  -->
-          <h1 class="text-4xl font-[700] text-center md:text-5xl md:text-left max-w-md">
+          <h1 class="text-4xl font-[700] text-center lg:text-5xl lg:text-left max-w-md">
             India's Most-loved Payments App
           </h1>
           <!-- para  -->
-          <p class="text-center md:text-left max-w-sm ">
+          <p class="text-center lg:text-left max-w-sm ">
             Recharge & pay bills, book flights & movie tickets, open a savings
             account, invest in stocks & mutual funds, and do a lot more.
           </p>
@@ -168,73 +168,92 @@
     </section>
 
     <!-- recharge section  -->
-    <section id="recharge" class="bg-lightBlue">
+    <section id="recharge" class="bg-[#00baf2]">
       <!-- container to heading and services block  -->
-      <div class="container my-0 mx-auto px-12 max-w-6xl">
+      <div class="container my-0 mx-auto max-w-screen-xl">
         <div class="py-16">
           <!-- heading  -->
-          <h2 class="text-4xl text-white text-center font-bold mb-6 md:text-left">
+          
+          <h2 class="text-4xl text-white font-[700] text-center font-bold mb-12  lg:text-left ">
             Recharge & Pay Bills on Paytm.
           </h2>
           <!-- recharge services container   -->
-          <div class="container mx-auto flex flex-wrap gap-y-6 gap-x-12">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 items-center justify-center mx-auto space-y-4 w-0.8 md:justify-start">
             <!-- 01  -->
-            <div class="flex flex-col items-center justify-between">
-              <img src="./imgs/icons/download.png" alt="recharge icon" />
-              <div>
-                <div>Mobile</div>
-                <div>Recharge</div>
-              </div>
+            <div class="flex justify-center items-center p-6 hover:bg-darkBlue">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons/download.png" alt="recharge icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Mobile</div>
+                  <div>Recharge</div>
+                </div>
+              </a>
             </div>
-             <!-- 02  -->
-            <div>
-              <img src="./imgs/icons/download (1).png" alt="rent icon" />
-              <div>
-                <div>Rent via</div>
-                <div>Credit Card</div>
-              </div>
+            <!-- 02  -->
+            <div class="flex justify-center items-center p-6 hover:bg-darkBlue">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons/download (1).png" alt="rent icon"  class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Rent via</div>
+                  <div>Credit Card</div>
+                </div>
+              </a>
             </div>
-             <!-- 03  -->
-            <div>
-              <img src="./imgs/icons/download (2).png" alt="electrocity icon" />
-              <div>
-                <div>Electricity</div>
-                <div>Bill</div>
-              </div>
+            
+            <!-- 03  -->
+            <div class="flex justify-center items-center p-6 hover:bg-darkBlue">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons/download (2).png" alt="electrocity icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Electricity</div>
+                  <div>Bill</div>
+                </div>
+              </a>
             </div>
-             <!-- 04  -->
-            <div>
-              <img src="./imgs/icons/download (3).png" alt="recharge icon" />
-              <div>
-                <div>DTH</div>
-                <div>Recharge</div>
-              </div>
+            
+            <!-- 04  -->
+            <div class="flex justify-center items-center p-6 hover:bg-darkBlue">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons/download (3).png" alt="recharge icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>DTH</div>
+                  <div>Recharge</div>
+                </div>
+              </a>
             </div>
-             <!-- 05  -->
-            <div>
-              <img src="./imgs/icons/download (4).png" alt="gas icon" />
-              <div>
-                <div>Book Gas</div>
-                <div>Cylinder</div>
-              </div>
+            
+            <!-- 05  -->
+            <div class="flex justify-center items-center p-6 hover:bg-darkBlue">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons/download (4).png" alt="gas icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Book Gas</div>
+                  <div>Cylinder</div>
+                </div>
+              </a>
             </div>
-             <!-- 06  -->
-            <div>
-              <img src="./imgs/icons/download (5).png" alt="recharge icon" />
-              <div>
-                <div>Credit Card</div>
-                <div>Payment</div>
-              </div>
+            
+            <!-- 06  -->
+            <div class="flex justify-center items-center p-6 hover:bg-darkBlue">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons/download (5).png" alt="recharge icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Credit Card</div>
+                  <div>Payment</div>
+                </div>
+              </a>
             </div>
+            
              <!-- 07 view more  -->
-            <div>
-              <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.8969 2.9999L18.9998 10.6977L10.8969 18.3955" stroke="#00B8F5" stroke-width="4.19118" stroke-linecap="round" stroke-linejoin="round"/>
-                <line x1="2.09559" y1="10.6977" x2="14.6691" y2="10.6977" stroke="#00B8F5" stroke-width="4.19118" stroke-linecap="round"/>
-              </svg>
-                
-              <div>View More</div>
-            </div>
+            <button class="flex justify-center items-center p-6  space-y-3 flex flex-col items-center justify-center cursor-pointer ">
+              <div class="bg-white p-5 rounded-full">
+                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+                  <path d="M10.8969 2.9999L18.9998 10.6977L10.8969 18.3955" stroke="#0F4A8A" stroke-width="4.19118" stroke-linecap="round" stroke-linejoin="round"/>
+                  <line x1="2.09559" y1="10.6977" x2="14.6691" y2="10.6977" stroke="#0F4A8A" stroke-width="4.19118" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="text-white font-bold">View More</div>
+            </button>
           </div>
         </div>
       </div>
@@ -243,204 +262,230 @@
     <!-- booking section  -->
     <section id="booking" class="bg-darkBlue">
       <!-- container to heading and services block  -->
-      <div class="container my-0 mx-auto px-4 max-w-6xl">
+      <div class="container my-0 mx-auto  px-4 max-w-screen-xl">
         <div class="py-16">
           <!-- heading  -->
-          <h2 class="text-4xl text-white text-center font-bold md:text-left">
+          <h2 class="text-4xl text-white text-center font-bold px-4 mb-12 lg:text-left">
             Book & Buy on Paytm.
           </h2>
           <!--  services container   -->
-          <div class="flex">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 items-center justify-center mx-auto space-y-4 w-0.8 md:justify-start">
             <!-- 01  -->
-            <div>
-              <img src="./imgs/icons-2/download.png" alt=" icon" />
-              <div>
-                <div>Movie</div>
-                <div>Tickets</div>
-              </div>
+            <div class="flex justify-center items-center p-6 hover:bg-[#00baf2]">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons-2/download.png" alt=" icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Movie</div>
+                  <div>Tickets</div>
+                </div>
+              </a>
             </div>
-             <!-- 02  -->
-            <div>
-              <img src="./imgs/icons-2/download (1).png" alt=" icon" />
-              <div>
-                <div>Flight</div>
-                <div>Tickets</div>
-              </div>
+            
+            <!-- 02  -->
+            <div class="flex justify-center items-center p-6 hover:bg-[#00baf2]">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons-2/download (1).png" alt=" icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Flight</div>
+                  <div>Tickets</div>
+                </div>
+              </a>
             </div>
+            
              <!-- 03  -->
-            <div>
-              <img src="./imgs/icons-2/download (2).png" alt=" icon" />
-              <div>
-                <div>Bus</div>
-                <div>Tickets</div>
-              </div>
+            <div class="flex justify-center items-center p-6 hover:bg-[#00baf2]">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons-2/download (2).png" alt=" icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Bus</div>
+                  <div>Tickets</div>
+                </div>
+              </a>
             </div>
+            
              <!-- 04  -->
-            <div>
-              <img src="./imgs/icons-2/download (3).png" alt=" icon" />
-              <div>
-                <div>Train</div>
-                <div>Tickets</div>
+            <div class="flex justify-center items-center p-6 hover:bg-[#00baf2]">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons-2/download (3).png" alt=" icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Train</div>
+                  <div>Tickets</div>
+                </div>
+              </a>
+            </div>
+            
+            <!-- 05  -->
+            <div class="flex justify-center items-center p-6 hover:bg-[#00baf2]">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons-2/download (4).png" alt=" icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>Car &</div>
+                  <div>Bikes</div>
+                </div>
+              </a>
+            </div>
+            
+            <!-- 06  -->
+            <div class="flex justify-center items-center p-6 hover:bg-[#00baf2]">
+              <a href="#" class="space-y-3">
+                <img src="./imgs/icons-2/download (5).png" alt=" icon" class="h-16"/>
+                <div class="text-center text-white font-bold">
+                  <div>International</div>
+                  <div>Flights</div>
+                </div>
+              </a>
+            </div>
+            
+            <!-- 07 view more  -->
+            <button class="flex justify-center items-center p-6  space-y-3 flex flex-col items-center justify-center cursor-pointer ">
+              <div class="bg-white p-5 rounded-full hover:bg-[#00baf2]">
+                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                  <path d="M10.8969 2.9999L18.9998 10.6977L10.8969 18.3955" stroke="#0F4A8A" stroke-width="4.19118" stroke-linecap="round" stroke-linejoin="round" />
+                  <line x1="2.09559" y1="10.6977" x2="14.6691" y2="10.6977" stroke="#0F4A8A" stroke-width="4.19118" stroke-linecap="round " />
+                </svg>
               </div>
-            </div>
-             <!-- 05  -->
-            <div>
-              <img src="./imgs/icons-2/download (4).png" alt="icon" />
-              <div>
-                <div>Car &</div>
-                <div>Bikes</div>
-              </div>
-            </div>
-             <!-- 06  -->
-            <div>
-              <img src="./imgs/icons-2/download (5).png" alt=" icon" />
-              <div>
-                <div>International</div>
-                <div>Flights</div>
-              </div>
-            </div>
-             <!-- 07 view more  -->
-            <div>
-              <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.8969 2.9999L18.9998 10.6977L10.8969 18.3955" stroke="#00B8F5" stroke-width="4.19118" stroke-linecap="round" stroke-linejoin="round"/>
-                <line x1="2.09559" y1="10.6977" x2="14.6691" y2="10.6977" stroke="#00B8F5" stroke-width="4.19118" stroke-linecap="round"/>
-              </svg>
-                
-              <div>View More</div>
-            </div>
+              <div class="text-white font-bold">View More</div>
+            </button>
           </div>
         </div>
       </div>
     </section>
 
+    
     <!-- payment instrument section  -->
-    <section class="bg-graySupLight">
+     <section class="bg-[#f5f7fa]">
       <!-- container to heading and services block  -->
-      <div class="container my-0 mx-auto px-4 max-w-6xl">
-        <div class="py-16">
-          <!-- heading  -->
-          <h2 class="text-4xl text-white text-center font-bold md:text-left">
-            Book & Buy on Paytm.
-          </h2>
-          <!--  services container   -->
-          <div class="flex flex-col gap-y-8 bg-graySupLight ">
-            <!-- 01  -->
-            <div class="flex items-center justify-between">
-              <!-- left side  -->
-              <div>
-                <!-- icons  -->
-                <div class="flex">
-                  <img src="./imgs/wallet.png" alt="paytm wallet icon">
-                  <div>
-                    <div>Paytm</div>
-                    <div>Wallet</div>
-                  </div>
-                </div>
-                <!-- heading  -->
-                <h2>The Fastest Way to Pay In-store & Online.</h2>
-                <!-- paragraph -->
-                <p>Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and apps.</p>
-                <!-- button  -->
-                <button class="flex gap-x-3 items-center justify-center bg-black    text-white px-6 py-3 rounded-full group hover:bg-white border-[1px] hover:border-black transition duration-200 md:justify-start">
-                  <span class="group-hover:text-black">Download Paytm App</span>
-                  <ion-icon
-                    name="logo-apple"
-                    class="group-hover:text-black"
-                  ></ion-icon
-                  ><ion-icon
-                    name="logo-google-playstore"
-                    class="group-hover:text-black"
-                  ></ion-icon>
-                </button>
-              </div>
-              <!-- right side  -->
-              <img src="./imgs/banner-waller.webp" alt="">
-            </div>
-            <!-- 02  -->
-            <div class="flex items-center justify-between">
-              <!-- left side  -->
-              <div>
-                <!-- icons  -->
-                <div class="flex">
-                  <img src="./imgs/upi.png" alt="paytm wallet icon">
-                  <div>
-                    <div>UPI Money</div>
-                    <div>Transfer</div>
-                  </div>
-                </div>
-                <!-- heading  -->
-                <h2>Pay anyone directly from your bank account.
-                </h2>
-                <!-- paragraph -->
-                <p>Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.</p>
-                <!-- button  -->
-                <button class="flex gap-x-3 items-center justify-center bg-black    text-white px-6 py-3 rounded-full group hover:bg-white border-[1px] hover:border-black transition duration-200 md:justify-start">
-                  <span class="group-hover:text-black">Download Paytm App</span>
-                  <ion-icon
-                    name="logo-apple"
-                    class="group-hover:text-black"
-                  ></ion-icon
-                  ><ion-icon
-                    name="logo-google-playstore"
-                    class="group-hover:text-black"
-                  ></ion-icon>
-                </button>
-              </div>
-              <!-- right side  -->
-              <img src="./imgs/banner-upi.webp" alt="">
-            </div>
-            <!-- 03  -->
-            <div class="flex items-center justify-between">
-              <!-- left side  -->
-              <div>
-                <!-- icons  -->
-                <div class="flex">
-                  <img src="./imgs/pospaid.webp" alt="paytm postpaid icon">
-                  <div>
-                    <div>Paytm</div>
-                    <div>Postpaid</div>
-                  </div>
-                </div>
-                <!-- heading  -->
-                <h2>Want it?
-                 <span> No more waiting for it.</span>
-                </h2>
-                <!-- paragraph -->
-                <p>With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.</p>
-                <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-      
-                </button>
-              </div>
-              <!-- right side  -->
-              <img src="./imgs/banner-postpaid.webp" alt="">
-            </div>
-            <!-- 04  -->
-            <div class="flex flex-col gap-y-12 items-center justify-between md:flex-row md:gap-y-0 md:gap-x-12">
-              <!-- 04 01  -->
-              <div class="cursor-pointer">
-                <img src="./imgs/hdfc.png" alt="">
-                <div>
-                  <h2>Unlimited Cashback Every time.</h2>
-                  <p>Paytm HDFC Bank Select Credit Card. A card with assured cashbacks and incredible offers</p>
-                </div>
-                <img src="./imgs/hdfc-card.webp" alt="">
-              </div>
-              <!-- 04 02  -->
-              <div class="cursor-pointer">
-                <img src="./imgs/sbi.png" alt="">
-                <div>
-                  <h2>India’s Most Sincere Credit Card</h2>
-                  <p>Paytm SBI Card and Paytm SBI Card SELECT
-                    With Intelligent Features & Great Rewards that Never Expire</p>
-                </div>
-                <img src="./imgs/sbi-card.webp" alt="">
+      <div class="container space-y-12 mx-auto px-12">
+        <!-- heading  --> 
+        <h2 class="text-4xl font-bold pt-20 md:pt-28 mx-auto max-w-screen-xl text-center md:text-left xl:text-5xl">
+          Paytm Payment Instruments
+        </h2>
+        <!-- 01  -->
+        <div class="container max-w-screen-xl mx-auto bg-white grid  grid-cols-1 gap-6 items-center justify-between lg:items-start  gap-y-12 p-8 lg:p-12 lg:grid-cols-2 lg:space-y-0">
+          <!-- left side  -->
+          <div class="flex flex-col items-center justify-center lg:items-start">
+            <!-- icons  -->
+            <div class="flex items-center justify-center gap-x-3 py-12 md:justify-start ">
+              <img src="./imgs/wallet.png" alt="paytm wallet icon" class="w-20">
+              <div  class="font-bold">
+                <div>Paytm</div>
+                <div>Wallet</div>
               </div>
             </div>
+            <!-- heading  -->
+            <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md">The Fastest Way to Pay In-store & Online.</h2>
+            <!-- paragraph -->
+            <p class="max-w-sm mb-8 text-center lg:text-left">Load up your Paytm Wallet for free and make payments in a jiffy at over 21 million stores, websites and apps.</p>
+            <!-- button  -->
+            <button
+            class="flex gap-x-3 items-center justify-center bg-black  text-white px-6 py-3 rounded-full group hover:bg-white border-[1px] hover:border-black transition duration-200 lg:justify-start">
+              <span class="group-hover:text-black">Download App</span>
+              <ion-icon
+                name="logo-apple"
+                class="group-hover:text-black"
+              ></ion-icon
+              ><ion-icon
+                name="logo-google-playstore"
+                class="group-hover:text-black"
+              ></ion-icon>
+            </button>
+
           </div>
+          <!-- right side  -->
+          <img src="./imgs/banner-waller.webp" alt="" class="">
+        </div>
+
+        <!-- 02  -->
+        <div class="container max-w-screen-xl mx-auto bg-white grid  grid-cols-1 gap-6 items-center justify-between lg:items-start  gap-y-12 p-8 lg:p-12 lg:grid-cols-2 lg:space-y-0">
+          <!-- left side  -->
+          <div class="text-center flex flex-col items-center justify-center lg:items-start">
+            <!-- icons  -->
+            <div class="flex items-center justify-center gap-x-3 py-12 md:justify-start">
+              <img src="./imgs/upi.png" alt="paytm upi icon" class="w-20">
+              <div  class="font-bold">
+                <div>UPI Money</div>
+                <div>Transfer</div>
+              </div>
+            </div>
+            <!-- heading  -->
+            <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md">Pay anyone directly from your bank account.
+            </h2>
+            <!-- paragraph -->
+            <p  class="max-w-sm mb-8 text-center lg:text-left">Pay anyone, everywhere. Make contactless & secure payments in-stores or online using Paytm Wallet or Directly from your Bank Account. Plus, send & receive money from anyone.</p>
+            <!-- button  -->
+            <button class="flex gap-x-3 items-center justify-center bg-black    text-white px-6 py-3 rounded-full group hover:bg-white border-[1px] hover:border-black transition duration-200 md:justify-start">
+              <span class="group-hover:text-black">Download App</span>
+              <ion-icon
+                name="logo-apple"
+                class="group-hover:text-black"
+              ></ion-icon
+              ><ion-icon
+                name="logo-google-playstore"
+                class="group-hover:text-black"
+              ></ion-icon>
+            </button>
+          </div>
+          <!-- right side  -->
+          <img src="./imgs/banner-upi.webp" alt="" class="self-center">
+        </div>
+        
+        <!-- 03  -->
+        <div class="container max-w-screen-xl mx-auto bg-white grid  grid-cols-1 gap-6 items-center justify-between lg:items-start  gap-y-12 p-8 lg:p-12 lg:grid-cols-2 lg:space-y-0">
+          <!-- left side  -->
+          <div class=" text-center flex flex-col items-center justify-center lg:items-start">
+            <!-- icons  -->
+            <div class="flex items-center justify-center gap-x-3 py-12 md:justify-start">
+              <img src="./imgs/pospaid.webp" alt="paytm postpaid icon" class="w-40">
+            </div>
+            <!-- heading  -->
+            <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md">Want it?
+             <div> No more waiting for it.</div>
+            </h2>
+            <!-- paragraph -->
+            <p class="max-w-sm mb-8 text-center lg:text-left">With Paytm Postpaid, your wishlist doesn't have to be on the waitlist. Shop for the things you want today and pay for them next month.</p>
+            <!-- button  -->
+            <button class=" bg-darkBlue text-white px-6 py-3 rounded-full group hover:bg-lightBlue border-[1px]  transition duration-200 md:justify-start" >
+              <span class="mr-3">learn More</span>
+              <ion-icon name="remove-outline" class=""></ion-icon>
+              <ion-icon name="chevron-forward-outline" ></ion-icon>
+  
+            </button>
+          </div>
+          <!-- right side  -->
+          <img src="./imgs/banner-postpaid.webp" alt="" class="self-center h-4/5">
+        </div>
+        <!-- 04  -->
+        <div class="flex flex-col gap-y-12 items-center justify-between lg:flex-row lg:gap-y-0 lg:gap-x-12">
+          <!-- 04 01  -->
+          <div class="flex flex-col gap-y-8 cursor-pointer bg-white px-10 lg:px-15">
+            <img src="./imgs/hdfc.png" alt="" class="h-1/2 w-1/2">
+            <div>
+              <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md">Unlimited Cashback Every time.</h2>
+              <p  class="max-w-sm mb-8 text-center lg:text-left">Paytm HDFC Bank Select Credit Card. A card with assured cashbacks and incredible offers</p>
+            </div>
+            <img src="./imgs/hdfc-card.webp" alt="" class="h-1/2">
+          </div>
+          <!-- 04 02  -->
+          <div class="flex flex-col gap-y-8 cursor-pointer bg-white px-10 pt-20 lg:px-15">
+            <img src="./imgs/sbi.png" alt="" class="h-1/2 w-1/2">
+            <div>
+              <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md">India’s Most Sincere Credit Card</h2>
+              <p  class="max-w-sm mb-8 text-center lg:text-left">Paytm SBI Card and Paytm SBI Card SELECT
+                With Intelligent Features & Great Rewards that Never Expire</p>
+            </div>
+            <img src="./imgs/sbi-card.webp" alt="" class="h-1/2">
+          </div>
+          
+        </div>
+          
+          
+         
+          
+        </div>
+       
+        
+         
+          
         </div>
       </div>
     </section>
