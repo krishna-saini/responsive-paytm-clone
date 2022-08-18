@@ -46,7 +46,7 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
   </head>
-  <body class="font-body">
+  <body class="font-body ">
     <!-- header section  -->
     <header class="flex justify-between items-center gap-x-4 w-full h-24 bg-white px-12 shadow-md">
       <!-- hamburger button for mobile nav -->
@@ -115,7 +115,7 @@
       <a href="#" class="font-[600]">Learn More</a>
     </div>
     <!-- hero section  -->
-    <section id="hero" class="py-12">
+    <section id="hero" class="py-12 overflow-hidden">
       <!-- flex container  -->
       <div
         class="container max-w-screen-xxl mx-auto my-16 px-8 flex gap-y-12 flex-col-reverse items-center lg:flex-row lg:space-y-0  "
@@ -170,15 +170,15 @@
     <!-- recharge section  -->
     <section id="recharge" class="bg-[#00baf2]">
       <!-- container to heading and services block  -->
-      <div class="container my-0 mx-auto max-w-screen-xl">
+      <div class="container my-0 mx-auto px-10 max-w-screen-xl">
         <div class="py-16">
           <!-- heading  -->
           
-          <h2 class="text-4xl text-white font-[700] text-center font-bold mb-12  lg:text-left ">
+          <h2 class="text-4xl text-white font-[700] px-6 text-center font-bold mb-12  lg:text-left ">
             Recharge & Pay Bills on Paytm.
           </h2>
           <!-- recharge services container   -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 items-center justify-center mx-auto space-y-4 w-0.8 md:justify-start">
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 items-center justify-center mx-auto space-y-4 w-0.8 md:justify-start">
             <!-- 01  -->
             <div class="flex justify-center items-center p-6 hover:bg-darkBlue">
               <a href="#" class="space-y-3">
@@ -262,14 +262,14 @@
     <!-- booking section  -->
     <section id="booking" class="bg-darkBlue">
       <!-- container to heading and services block  -->
-      <div class="container my-0 mx-auto  px-4 max-w-screen-xl">
+      <div class="container my-0 mx-auto px-12  max-w-screen-xl">
         <div class="py-16">
           <!-- heading  -->
-          <h2 class="text-4xl text-white text-center font-bold px-4 mb-12 lg:text-left">
+          <h2 class="text-4xl text-white text-center font-bold px-8 mb-12 lg:text-left">
             Book & Buy on Paytm.
           </h2>
           <!--  services container   -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 items-center justify-center mx-auto space-y-4 w-0.8 md:justify-start">
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 items-center justify-center mx-auto space-y-4 w-0.8 md:justify-start">
             <!-- 01  -->
             <div class="flex justify-center items-center p-6 hover:bg-[#00baf2]">
               <a href="#" class="space-y-3">
@@ -353,11 +353,11 @@
 
     
     <!-- payment instrument section  -->
-     <section class="bg-[#f5f7fa]">
+    <section class="bg-[#f5f7fa]">
       <!-- container to heading and services block  -->
-      <div class="container space-y-12 mx-auto px-12">
+      <div class="container max-w-[1140px] space-y-12 mx-auto py-24 md:py-30 ">
         <!-- heading  --> 
-        <h2 class="text-4xl font-bold pt-20 md:pt-28 mx-auto max-w-screen-xl text-center md:text-left xl:text-5xl">
+        <h2 class="text-4xl font-bold   mx-auto  text-center md:text-left xl:text-5xl">
           Paytm Payment Instruments
         </h2>
         <!-- 01  -->
@@ -481,11 +481,7 @@
           
          
           
-        </div>
-       
-        
-         
-          
+        </div> 
         </div>
       </div>
     </section>
@@ -493,229 +489,239 @@
     <!-- financial services section  -->
     <section>
       <!-- container to heading and services block  -->
-      <div class="container my-0 mx-auto px-4 max-w-6xl">
-        <div class="py-16">
-          <!-- heading  -->
-          <h2 class="text-4xl text-white text-center font-bold md:text-left">
-            Financial Services by Paytm
-          </h2>
-          <!--  services container   -->
-          <div class="flex flex-col bg-graySupLight ">
-            <!-- 01  -->
-            <div class="flex items-center justify-between">
-              <!-- left side  -->
-              <div>
-                <!-- icons  -->
-               
-                <img src="./imgs/payment bank.png" alt="paytm payment bank icon">
-                  
-                
-                <!-- heading  -->
-                <h2>India's most sincere bank.</h2>
-                <!-- paragraph -->
-                <p>Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today.</p>
-                <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-      
-                </button>
-              </div>
-              <!-- right side  -->
-              <img src="./imgs/banner-paytm-bank.webp" alt="">
+      <div class="container max-w-screen-xl mx-auto  pt-24 md:pt-32">
+         <!-- heading  -->
+         <h2 class="text-3xl  text-center font-bold mx-auto max-w-[1140px] mb-8 md:text-4xl xl:text-5xl md:text-left">
+          Financial Services by Paytm
+        </h2>
+        <!-- 01 payment bank  -->
+        <div class="container max-w-[1170px] m-auto ">
+          <div class="flex flex-col lg:flex-row justify-between px-4 py-12 items-center bg-white ">
+            <!-- left side  -->
+            <div class=" text-center lg:text-start">
+              <!-- icons  -->
+              
+              <img src="./imgs/payment bank.png" alt="paytm payment bank icon" class="h-12 mb-20">
+              <!-- heading  -->
+              <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md lg:text-4xl">India's most sincere bank.</h2>
+              <!-- paragraph -->
+              <p class="max-w-sm mb-8 text-center lg:text-left">Paytm Payments Bank offers secure, transparent and risk-free banking at your fingertips. With instant account opening, virtual debit card and zero balance requirements, experience the future of banking today.</p>
+              <!-- button  -->
+              <button class=" bg-darkBlue text-white px-6 py-3 rounded-full group hover:bg-lightBlue border-[1px]  transition duration-200 md:justify-start">
+                <span class="mr-3">learn More</span>
+                <ion-icon name="remove-outline"></ion-icon>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
             </div>
-            <!-- 02  -->
-            <div class="flex items-center justify-between">
+            <!-- right side  -->
+            <img src="./imgs/banner-paytm-bank.webp" alt="" class="w-[450px] ">
+          </div>
+        </div>
+        
+
+        <!-- 02 paytm money -->
+        <div class="container max-w-[1270px] m-auto">
+          <div class=" flex flex-col lg:flex-row justify-between px-4 py-20 items-center bg-graySupLight">
+            <!-- left side img -->
+            <img src="./imgs/banner-paytm-money.webp" alt="" class="w-[450px] ">
+            <!-- Right side -->
+            <div class="flex flex-col items-center justify-center lg:items-start">
+              <!-- icons  -->              
+              <img src="./imgs/paytm money.webp" alt="paytm money icon" class="w-40 mb-20">                
+              <!-- heading  -->
+              <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md">Build Long-term Wealth & Achieve your Goals.</h2>
+              <!-- paragraph -->
+              <p class="max-w-sm mb-8 text-center lg:text-left">Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can help you create wealth & realise your dreams.</p>
+              <!-- button  -->
+              <button class=" bg-darkBlue text-white px-6 py-3 rounded-full group hover:bg-lightBlue border-[1px]  transition duration-200 md:justify-start">
+                <span class="mr-3">learn More</span>
+                <ion-icon name="remove-outline"></ion-icon>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 03 insurance -->
+        <div class="container max-w-[1170px] m-auto ">
+          <div class="flex flex-col lg:flex-row justify-between px-4 py-12 items-center bg-white">
+            <!-- left side  -->
+            <div class=" text-center lg:text-start">
+              <!-- icons  -->              
+              <img src="./imgs/insurance.webp" alt="paytm insurance icon" class="h-12 mb-20">               
+              <!-- heading  -->
+              <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md lg:text-4xl">Insurance made easy.</h2>
+              <!-- paragraph -->
+              <p class="max-w-sm mb-8 text-center lg:text-left">Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.</p>
+              <!-- button  -->
+              <button class=" bg-darkBlue text-white px-6 py-3 rounded-full group hover:bg-lightBlue border-[1px]  transition duration-200 md:justify-start">
+                <span class="mr-3">learn More</span>
+                <ion-icon name="remove-outline"></ion-icon>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
+            </div>
+            <!-- right side  -->
+            <img src="./imgs/insurance-banner.webp" alt="" class="w-[450px] ">
+          </div>
+        </div>
+
+          <!-- 04  -->
+          <div class="container max-w-full m-auto">
+            <div class=" flex flex-col lg:flex-row justify-between pl-16 py-20 items-center bg-graySupLight">
               <!-- left side img -->
-              <img src="./imgs/banner-paytm-money.webp" alt="">
+              <img src="./imgs/loan-banner.webp" alt="" class="w-[450px] ">
               <!-- Right side -->
-              <div>
+              <div class="flex flex-col items-center justify-center lg:items-start">
                 <!-- icons  -->              
-                <img src="./imgs/paytm money.webp" alt="paytm money icon">                
+                <img src="./imgs/loan.png" alt="paytm loan icon" class="w-40 mb-20">                
                 <!-- heading  -->
-                <h2>Build Long-term Wealth & Achieve your Goals.</h2>
+                <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md">Get a Personal Loan in 2 Minutes.</h2>
                 <!-- paragraph -->
-                <p>Investing on Paytm Money is transparent, low-cost and commission-free. Buy stocks & mutual funds that can help you create wealth & realise your dreams.</p>
+                <p class="max-w-sm mb-8 text-center lg:text-left">Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.</p>
                 <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
-              </div>
-            </div>
-            <!-- 03  -->
-            <div class="flex items-center justify-between">
-              <!-- left side  -->
-              <div>
-                <!-- icons  -->              
-                <img src="./imgs/insurance.webp" alt="paytm insurance icon">               
-                <!-- heading  -->
-                <h2>Insurance made easy.</h2>
-                <!-- paragraph -->
-                <p>Buying insurance does not have to be tedious, time-consuming & confusing. Paytm Insurance removes the worry of getting insured by making it simple, convenient & easy-to-understand.</p>
-                <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
-              </div>
-              <!-- right side  -->
-              <img src="./imgs/insurance-banner.webp" alt="">
-            </div>
-            <!-- 04  -->
-            <div class="flex items-center justify-between">
-              <!-- left side img -->
-              <img src="./imgs/loan-banner.webp" alt="">
-              <!-- Right side -->
-              <div>
-                <!-- icons  -->              
-                <img src="./imgs/loan.png" alt="paytm loan icon">                
-                <!-- heading  -->
-                <h2>Get a Personal Loan in 2 Minutes.</h2>
-                <!-- paragraph -->
-                <p>Paytm offers India's quickest multi-purpose, hassle-free loan. It is 100% digital, transparent and paperless.</p>
-                <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
+                <button class=" bg-darkBlue text-white px-6 py-3 rounded-full group hover:bg-lightBlue border-[1px]  transition duration-200 md:justify-start">
+                  <span class="mr-3">learn More</span>
                   <ion-icon name="remove-outline"></ion-icon>
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
               </div>
             </div>
           </div>
+          
         </div>
+        
       </div>
     </section>
 
     <!-- business services section  -->
     <section class="bg-white">
         <!-- container to heading and services block  -->
-      <div class="container my-0 mx-auto px-4 max-w-6xl">
-        <div class="py-16">
-          <!-- heading  -->
-          <h2 class="text-4xl text-white text-center font-bold md:text-left">
-            Business Services by Paytm
-          </h2>
-          <!--  services container   -->
-          <div class="flex flex-col gap-y-8 bg-graySupLight ">
-            <!-- 01  -->
-            <div class="flex items-center justify-between">
-              <!-- left side  -->
-              <div>
-                <!-- heading  -->
-                <h2>Accept payments online with ease</h2>
-                <!-- paragraph -->
-                <p>Grow your business with the payment gateway that powers India’s largest brands and even the Paytm App</p>
-                <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
-              </div>
-              <!-- right side  -->
-              <img src="./imgs/business-services-1.webp" alt="">
+      <div class="container max-w-[1140px]    space-y-12 mx-auto pt-24 md:pt-30 ">
+        <!-- heading  -->
+        <h2 class="text-4xl max-w-screen-xl font-bold   mx-auto  text-center md:text-left xl:text-5xl">
+          Business Services by Paytm
+        </h2>
+        <!-- 01  -->
+        <div class="container max-w-screen-xl mx-auto bg-graySupLight ">
+          <div class="flex flex-col items-center justify-between pl-28 py-20 lg:flex-row">
+            <!-- left side  -->
+            <div class="flex flex-col items-center justify-center lg:items-start">
+              <!-- heading  -->
+              <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md">Accept payments online with ease</h2>
+              <!-- paragraph -->
+              <p class="max-w-sm mb-8 text-center lg:text-left">Grow your business with the payment gateway that powers India’s largest brands and even the Paytm App</p>
+              <!-- button  -->
+              <button  class="flex gap-x-3 items-center justify-center bg-black  text-white px-6 py-3 rounded-full group hover:bg-white border-[1px] hover:border-black transition duration-200 lg:justify-start">
+                <span class="mr-3">learn More</span>
+                <ion-icon name="remove-outline"></ion-icon>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
             </div>
-            <!-- 02 -->
-            <div class="flex items-center justify-between">
-              <!-- left side  -->
-              <div>
-                <!-- heading  -->
-                <h2>In-shop payments powered by Paytm.</h2>
-                <!-- paragraph -->
-                <p>Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of solutions for all kind of merchants</p>
-                <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
-              </div>
-              <!-- right side  -->
-              <img src="./imgs/business-services-2.webp" alt="">
+            <!-- right side  -->
+            <img src="./imgs/business-services-1.webp" alt="" class="h-[433px]">
+          </div>
+          
+        </div>
 
+        <!-- 02 -->
+        <div class="container max-w-screen-xl mx-auto bg-graySupLight">
+          <div class="flex flex-col items-center justify-between pl-28 py-20 lg:flex-row">
+              <!-- left side  -->
+            <div class="flex flex-col items-center justify-center lg:items-start">
+              <!-- heading  -->
+              <h2 class="text-2xl md:text-3xl text-center font-bold  mb-6 lg:text-left max-w-md">In-shop payments powered by Paytm.</h2>
+              <!-- paragraph -->
+              <p class="max-w-sm mb-8 text-center lg:text-left">Millions of small & big businesses use Paytm to accept payments anywhere any time with a wide range of solutions for all kind of merchants</p>
+              <!-- button  -->
+              <button class="flex gap-x-3 items-center justify-center bg-black  text-white px-6 py-3 rounded-full group hover:bg-white border-[1px] hover:border-black transition duration-200 lg:justify-start">
+                <span class="mr-3">learn More</span>
+                <ion-icon name="remove-outline"></ion-icon>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </button>
             </div>
+            <!-- right side  -->
+            <img src="./imgs/business-services-2.webp" alt="" class="h-[433px]">
           </div>
         </div>
-      </div>
+      </div>  
     </section>
 
     <!-- business tools section  -->
-    <section>
+    <section class="bg-white">
        <!-- container to heading and services block  -->
-      <div class="container my-0 mx-auto px-4 max-w-6xl">
-        <div class="py-16">
-          <!-- heading  -->
-          <h2 class="text-4xl text-white text-center font-bold md:text-left">
-            Business Services by Paytm
-          </h2>
-          <!--  services container   -->
-          <div class="flex ">
-            <!-- 01  -->
-            <div class="flex flex-col">
-              <img src="./imgs/business-tools/POS Billing _span_Software__span_.webp" alt="">
+      <div class="container max-w-[1140px] mx-auto pt-24 md:pt-30">
+        <!-- heading  -->
+        <h2 class="text-4xl max-w-screen-xl font-bold mb-5 lg:mb-10  mx-auto  text-center md:text-left xl:text-5xl">
+          Business Services by Paytm
+        </h2>
+        <!--  services container   -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center justify-center space-y-4 mx-auto md:justify-start">
+          <!-- 01  -->
+          <div class="  ">
+            <div class="mr-5    ">
+              <img src="./imgs/business-tools/POS Billing _span_Software__span_.webp" alt="" class="max-w-full">
               <!-- lower div  -->
-              <div>
-                <h3>POS Billing
+              <div class="pr-8 text-center xl:text-left ">
+                <h3 class="text-lg lg:text-xl  pt-10 pb-5 font-bold">POS Billing
                   Software</h3>
-                <p>Say Hello to Smart Retail Business Management</p> 
+                <p class="pb-8 text-lg max-w-sm">Say Hello to Smart Retail Business Management</p> 
                 <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button> 
+                <div class=" flex items-center justify-center gap-x-2 xl:justify-start">
+                  <a href="" class="text-lg font-bold">Learn More 
+                  </a>
+                  <img src="./imgs/arrow.svg" alt="" class="h-4">
+                </div>
+                 
               </div>
             </div>
-            <!-- 02  -->
-            <div class="flex flex-col">
-              <img src="./imgs/business-tools/Advertise on_span_Paytm__span_.webp" alt="">
-              <!-- lower div  -->
-              <div>
-                <h3>Advertise on
-                  Paytm</h3>
-                <p>Grow your business by advertising on India’s largest mobile business</p> 
-                <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button> 
+
+          </div>
+          
+          <!-- 02  -->
+          <div class="mr-5">
+            <img src="./imgs/business-tools/Advertise on_span_Paytm__span_.webp" alt="">
+            <!-- lower div  -->
+            <div class="pr-8 text-center xl:text-left ">
+              <h3 class="text-lg lg:text-xl  pt-10 pb-5 font-bold">Advertise on
+                Paytm</h3>
+              <p class="pb-8 text-lg max-w-sm">Grow your business by advertising on India’s largest mobile business</p> 
+              <!-- button  -->
+              <div class=" flex items-center justify-center gap-x-2 xl:justify-start">
+                <a href="" class="text-lg font-bold">Learn More 
+                </a>
+                <img src="./imgs/arrow.svg" alt="" class="h-4">
               </div>
             </div>
-            <!-- 03  -->
-            <div class="flex flex-col">
-              <img src="./imgs/business-tools/Paytm for _span_Business App__span_.webp" alt="">
-              <!-- lower div  -->
-              <div>
-                <h3>Paytm for
-                  Business App/h3>
-                <p>Everything you need to manage your business on your phone</p> 
-                <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button> 
-              </div>
+          </div>
+          <!-- 03  -->
+          <div class="mr-5">
+            <img src="./imgs/business-tools/Paytm for _span_Business App__span_.webp" alt="" class="">
+            <!-- lower div  -->
+            <div class="pr-8 text-center xl:text-left ">
+              <h3 class="text-lg lg:text-xl  pt-10 pb-5 font-bold">Paytm for
+                Business App</h3>
+              <p class="pb-8 text-lg max-w-sm">Everything you need to manage your business on your phone</p> 
+              <!-- button  -->
+              <div class=" flex items-center justify-center gap-x-2 xl:justify-start">
+                <a href="" class="text-lg font-bold">Learn More 
+                </a>
+                <img src="./imgs/arrow.svg" alt="" class="h-4">
+              </div> 
             </div>
-            <!-- 04  -->
-            <div class="flex flex-col">
-              <img src="./imgs/business-tools/Business _span_Khata__span_.webp" alt="">
-              <!-- lower div  -->
-              <div>
-                <h3>Business
-                  Khata</h3>
-                <p>Managing Khata made easy</p> 
-                <!-- button  -->
-                <button >
-                  <span class="group-hover:text-black">learn More</span>
-                  <ion-icon name="remove-outline"></ion-icon>
-                  <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button> 
+          </div>
+          <!-- 04  -->
+          <div class="mr-5 ">
+            <img src="./imgs/business-tools/Business _span_Khata__span_.webp" alt="" class="-mt-12">
+            <!-- lower div  -->
+            <div class="pr-8 text-center xl:text-left ">
+              <h3 class="text-lg lg:text-xl  pt-10 pb-5 font-bold">Business
+                Khata</h3>
+              <p class="pb-8 text-lg max-w-sm">Managing Khata made easy</p> 
+              <!-- button  -->
+              <div class=" flex items-center justify-center gap-x-2 xl:justify-start">
+                <a href="" class="text-lg font-bold">Learn More 
+                </a>
+                <img src="./imgs/arrow.svg" alt="" class="h-4">
               </div>
             </div>
           </div>
@@ -724,10 +730,10 @@
     </section>
     
     <!-- money and travel section  -->
-    <section>
-      <div class="container my-0 mx-auto px-4 max-w-6xl">
+    <section class="bg-sky-100">
+      <div class="container my-0 mx-auto ">
         <div class="py-16">
-          <div class="flex flex-col">
+          <!-- <div class="max-w-screen-lg flex flex-col p-6"> -->
 
             <!-- 01 paytm money part  -->
             <div class="flex">
