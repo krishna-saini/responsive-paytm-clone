@@ -1,4 +1,4 @@
-# Shopify.in Clone 
+# paytm.com Clone 
 This is a solution to the Tailwind project no. 01 given in Full Stack Web development bootcamp by [Hitest Chowdhary](https://www.linkedin.com/in/hiteshchoudhary/?originalSubdomain=in)
 
 ## Table of contents
