@@ -21,9 +21,6 @@ This is a solution to the Tailwind project no. 01 given in Full Stack Web develo
 
 ### The challenge
 
-Users should be able to
-
-
 - code the given design [paytm.com](https://www.paytm.com/) using HTML and tailwind CSS
 - make it responsive
 
